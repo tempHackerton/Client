@@ -73,3 +73,8 @@
     text-transform: capitalize;
     color: black;
 }
+
+.mainIcon {
+    width: 300px;
+    height: 300px;
+}
