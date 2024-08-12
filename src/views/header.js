@@ -86,6 +86,7 @@ function Header() {
 	>
 		<div className={styles.logoleft}>
 			<img
+				onClick={handleHomeClick}
 				style={{ width :'auto', height: '11vh' }}
 				src={mascot}
 				alt="Yong bok"
@@ -104,36 +105,26 @@ function Header() {
 								숨겨진 복지 찾기
 							</LinkWrapper>
 						</Li>
+					</Ul>
+				</Menu>
+			</div>
+			<div onClick={LogoutHandler} ref={LogoutRef}>
+				<p>AI 지원</p>
+				<Menu isDropped={LogoutIsOpen}>
+					<Ul>
 						<Li>
-							<LinkWrapper onClick={handleCraft2Click}>
-								용인 행사 추천
+							<LinkWrapper onClick={handleLogoutClick}>
+								자기소개서 첨삭
+							</LinkWrapper>
+						</Li>
+						<Li>
+							<LinkWrapper onClick={handleLogoutClick}>
+								AI 면접관
 							</LinkWrapper>
 						</Li>
 					</Ul>
 				</Menu>
 			</div>
-			<div onClick={handleGuideClick}>
-				<p>AI 지원</p>
-			</div>
-			{isuser && (
-				<div onClick={LogoutHandler} ref={LogoutRef}>
-					<p>OO님 환영합니다.</p>
-					<Menu isDropped={LogoutIsOpen}>
-						<Ul>
-							<Li>
-								<LinkWrapper onClick={handleLogoutClick}>
-									로그아웃
-								</LinkWrapper>
-							</Li>
-						</Ul>
-					</Menu>
-				</div>
-			)}
-			{!isuser && (
-				<div onClick={handleLoginClick}>
-					<p>로그인 / 회원가입</p>
-				</div>
-			)}
 		</div>
     </div>
   )
