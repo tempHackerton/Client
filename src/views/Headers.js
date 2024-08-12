@@ -1,12 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Headers.module.css";
 import UseDetectClose from "../hooks/useDetectClose";
 import { useCookies } from "react-cookie";
 
 import mascot from "../mascot.png";
-function Header() {
+function Headers() {
 	const [LogoutIsOpen, LogoutRef, LogoutHandler] = UseDetectClose(false);
     const [boardIsOpen, boardRef, boardHandler] = UseDetectClose(false);
 	// const [cookies, setCookie, removeCookie] = useCookies([
@@ -14,7 +14,7 @@ function Header() {
 	// 	"socialToken",
 	// ]);
 	const [isuser, setIsuser] = useState(false);
-
+    //dd
 	function handleHomeClick() {
 		window.location.href = "/";
 	}
@@ -130,7 +130,7 @@ function Header() {
   )
 }
 
-export default Header
+export default Headers
 
 const Menu = styled.div`
 	background: #A8D9BE;
