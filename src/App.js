@@ -1,9 +1,10 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import BackGround from "./views/BackGround";
 import Header from './views/Header';
 import Main from "./views/Main";
+import Search from "./views/Search";
 
 function App() {
   return (
