@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
-import styles from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 import UseDetectClose from "../hooks/useDetectClose";
 import { useCookies } from "react-cookie";
 
