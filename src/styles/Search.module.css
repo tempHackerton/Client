@@ -1,12 +1,14 @@
 .background {
-    position: absolute;
+    position: fixed;
     display: flex;
     /* width: 1920px;
     height: 829px; */
     width: 100%;
-    height: 88%;
-    left: 0px;
-    top: 150px;
+    /* height: 88%; */
+    height: 100%;
+    left: 0;
+    /* top: 150px; */
+    top: 0;
     /* background-color: aqua; */
     justify-content: center;
     align-items: center;
@@ -77,4 +79,57 @@
 .mainIcon {
     width: 300px;
     height: 300px;
+}
+
+.mainBox3 {
+    position: absolute;
+    /* width: 704px; */
+    height: 140px;
+    left: 112px;
+    top: 204px;
+
+    font-size: 100px;
+    line-height: 140%;
+    /* identical to box height, or 140px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.imgTest {
+    position: absolute;
+    width: 552px;
+    height: 628px;
+    left: 1142px;
+    top: 256px;
+}
+
+.inputWrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.744vh;
+}
+
+.inputTitle {
+    gap: 0.821vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "NanumSquareRoundOTF";
+    font-size: 1.538vh;
+    font-weight: bold;
+}
+
+.textEP1 {
+    padding-left: 0.521vw;
+    font-weight: bold;
+    font-family: "NanumSquareRoundOTF";
+    font-size: 1.538vh;
+    border: 1px solid #b2b2b2;
+    width: 19.271vw;
+    height: 4.205vh;
+    margin-right: 2.865vw;
+    border-radius: 20px;
 }
