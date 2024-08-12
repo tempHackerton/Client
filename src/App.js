@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Main from "./views/Main";
-import Header from './views/header';
+import Header from './views/Header';
 
 function App() {
   return (

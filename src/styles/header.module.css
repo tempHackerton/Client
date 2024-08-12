@@ -21,7 +21,7 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	display: flex;
 	cursor: pointer;
-	margin-left: 2.813vw;
+	margin-left: 2.3vw;
 	flex-shrink: 0;
 }
 
@@ -31,7 +31,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	gap: 7vw;
+	gap: 10vw;
 }
 
 .navelement > div {
@@ -44,13 +44,13 @@
 	font-family: "Anek Tamil";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 3.077vh;
+	font-size: 3.5vh;
 	line-height: 140%;
 	/* identical to box height, or 42px */
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
-	color: #ffffff;
+	color: #000000;
 
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	text-align: right;
