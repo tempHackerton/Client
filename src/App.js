@@ -5,6 +5,7 @@ import BackGround from "./views/BackGround";
 import Header from './views/Headers';
 import Main from "./views/Main";
 import Search from "./views/Search";
+import SelfIntro from "./views/SelfIntroduce";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <BackGround/>
     <Routes>
       <Route exact path='/' element={<Main/>}/>
+      <Route exact path='/IntroModify' element={<SelfIntro/>}/>
     </Routes>
     </div>
   );
