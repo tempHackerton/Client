@@ -1,5 +1,5 @@
 .background {
-    position: fixed;
+    position: relative;
     display: flex;
     /* width: 1920px;
     height: 829px; */
@@ -14,9 +14,18 @@
     align-items: center;
 }
 
-.mainBox {
-    width: 1723px;
+.mainWrapper {
+    gap: 88px;
+    display: flex;
+    margin-top: 175px;
+    width: 1750px;
     height: 698px;
+}
+
+.mainBox {
+    width: 1081px;
+    height: 698px;
+
     background: #67ce96;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
@@ -28,34 +37,65 @@
     flex-direction: column;
 }
 
+.mascotPos {
+    padding-top: 96px;
+    width: 581px;
+    height: 581px;
+}
+
 .searchTitle1 {
     margin-top: 42px;
     /* width: 704px; */
     height: 140px;
+    left: 946px;
+    top: 247px;
 
+    font-family: "NanumSquareRoundOTF";
+    font-style: normal;
+    font-weight: 800;
     font-size: 100px;
     line-height: 140%;
     /* identical to box height, or 140px */
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: white;
+
+    color: #ffffff;
 }
 
 .searchTitle2 {
-    margin-top: 38px;
-    height: 336px;
+    margin-top: 53px;
+    /* width: 734px; */
+    height: 168px;
 
-    font-size: 80px;
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
     line-height: 140%;
-    /* or 112px */
+    /* or 56px */
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: white;
+
+    color: #ffffff;
+}
+.searchTitle3 {
+    margin-top: 162px;
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    /* or 56px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #ffffff;
 }
 
 .startBtn {
-    margin-top: 39px;
+    margin-top: 162px;
     width: 266px;
     height: 81px;
 
@@ -65,71 +105,24 @@
 
     background: white;
 
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 700;
     font-size: 30px;
     line-height: 140%;
+    /* or 42px */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: black;
-}
-
-.mainIcon {
-    width: 300px;
-    height: 300px;
-}
-
-.mainBox3 {
-    position: absolute;
-    /* width: 704px; */
-    height: 140px;
-    left: 112px;
-    top: 204px;
-
-    font-size: 100px;
-    line-height: 140%;
-    /* identical to box height, or 140px */
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
 
     color: #000000;
 }
 
-.imgTest {
-    position: absolute;
-    width: 552px;
-    height: 628px;
-    left: 1142px;
-    top: 256px;
-}
-
-.inputWrap {
+.btnWrapper {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 1.744vh;
-}
-
-.inputTitle {
-    gap: 0.821vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "NanumSquareRoundOTF";
-    font-size: 1.538vh;
-    font-weight: bold;
-}
-
-.textEP1 {
-    padding-left: 0.521vw;
-    font-weight: bold;
-    font-family: "NanumSquareRoundOTF";
-    font-size: 1.538vh;
-    border: 1px solid #b2b2b2;
-    width: 19.271vw;
-    height: 4.205vh;
-    margin-right: 2.865vw;
-    border-radius: 20px;
+    width: 744px;
+    justify-content: space-between;
 }
