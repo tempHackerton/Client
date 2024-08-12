@@ -113,7 +113,7 @@ function Header() {
 				</Menu>
 			</div>
 			<div onClick={handleGuideClick}>
-				<p>커뮤니티</p>
+				<p>AI 지원</p>
 			</div>
 			{isuser && (
 				<div onClick={LogoutHandler} ref={LogoutRef}>
