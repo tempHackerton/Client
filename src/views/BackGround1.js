@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../styles/Background.module.css";
+import styles from "../styles/Background1.module.css";
 
 function BackGround() {
   return (
