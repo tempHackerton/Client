@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import styles from "../styles/Headers.module.css";
 import UseDetectClose from "../hooks/useDetectClose";
 import { FaBell } from "react-icons/fa6";
+import { BiSolidBellRing } from "react-icons/bi";
 import PolicyListModal from "../Components/PolicyLIstModal";
 
 import mascot from "../mascot.png";
@@ -12,6 +13,7 @@ function Headers() {
     const [aiIsOpen, aiRef, aiHandler] = UseDetectClose(false);
     const [serviceIsOpen, serviceRef, serviceHandler] = UseDetectClose(false);
     // const [alarmIsOpen, alarmRef, alarmHandler] = UseDetectClose(false);
+    const [isAlarmClicked, setIsAlarmClicked] = useState(false);
 
     const [open, setOpen] = useState(false);
 
@@ -94,10 +96,14 @@ function Headers() {
                 />
             </div>
             <div className={styles.navelement} style={{ color: "#f1f1f1" }}>
-                <div style={{marginRight:"6vw"}} onClick={handleHomeClick}>
+                <div style={{ marginRight: "6vw" }} onClick={handleHomeClick}>
                     <p>Home</p>
                 </div>
-                <div style={{marginRight:"6vw"}} onClick={serviceHandler} ref={serviceRef}>
+                <div
+                    style={{ marginRight: "6vw" }}
+                    onClick={serviceHandler}
+                    ref={serviceRef}
+                >
                     <p>Service</p>
                     <Menu isDropped={serviceIsOpen}>
                         <Ul>
@@ -109,8 +115,14 @@ function Headers() {
                         </Ul>
                     </Menu>
                 </div>
-                <div style={{marginRight:"1vw"}} onClick={() => setOpen(true)}>
-                    <FaBell />
+                <div
+                    style={{ marginRight: "1vw" }}
+                    onClick={() => {
+                        setOpen(true);
+                        setIsAlarmClicked(true);
+                    }}
+                >
+                    {isAlarmClicked ? <FaBell /> : <BiSolidBellRing />}
                 </div>
                 {isuser && (
                     <div onClick={LogoutHandler} ref={LogoutRef}>
