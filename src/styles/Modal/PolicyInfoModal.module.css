@@ -18,6 +18,7 @@
     border-radius: 2%;
     width: 33.091vw; /* Adjust the width as necessary */
     height: 57.837vh;
+    font-family: "NanumSquare";
     color: white;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -37,6 +38,7 @@
 }
 
 .closeButton {
+    font-family: "NanumSquare";
     position: absolute; /* Position it absolutely within the modal container */
     top: 2.519vh; /* Distance from the top of the modal */
     right: 1.02vw; /* Distance from the right of the modal */
