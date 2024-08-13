@@ -49,7 +49,7 @@ function Userform() {
     console.log('Form Data Submitted: ', formData);
     setisStart(true);
     setTimeout(() => {
-        window.location.href = "/SearchResult";
+        window.location.href = "/SearchRes";
     }, 5000);
     // You can add further processing, like sending the data to an API
   };
