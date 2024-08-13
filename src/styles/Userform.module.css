@@ -1,0 +1,151 @@
+.back{
+    margin-top: 15vh;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+
+    width: 1084px;
+    height: 742px;
+
+    background: #67CE96;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+}
+
+.title{
+    margin-bottom: 40px;
+    margin-top: 55px;   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 140%;
+    /* identical to box height, or 140px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.txt{
+    font-family: 'Anek Tamil';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    /* or 42px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.box1{
+    text-align: center;
+    margin-left: 5px;
+    box-sizing: border-box;
+    width: 266px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+
+}
+.box1::placeholder,
+.box2::placeholder,
+.box3::placeholder,
+.box5::placeholder{
+    color: black
+}
+.box2{
+    text-align: center;
+    margin-left: 5px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.box3{
+    text-align: center;
+    margin-left: 5px;
+    width: 150px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.box4{
+    text-align: center;
+    margin-left: 5px;
+    width: 100px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.box5{
+    text-align: center;
+    margin-left: 5px;
+    width: 100px;
+    height: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.btn{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    /* identical to box height, or 42px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.loding{
+    margin-top: 100px;
+    width: 580px;
+    height: 580px;
+    animation: lodingani 2000ms infinite ease-in-out;
+}
+
+@keyframes lodingani{
+    0% {
+      transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
