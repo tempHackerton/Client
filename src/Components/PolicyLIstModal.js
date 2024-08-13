@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "../styles/Modal/PolicyListModal.module.css";
 import PolicyInfoModal from "./PolicyInfoModal";
 import mascotIcon from "../img/mascotIcon.png";
+import mascotIconNew from "../img/mascotIconNew.png";
 
 const PolicyListModal = ({ isOpen, onClose }) => {
     const [isPolicyInfoOpen, setIsPolicyInfoOpen] = useState(false); // State to manage PolicyInfoModal visibility
@@ -90,7 +91,11 @@ const PolicyListModal = ({ isOpen, onClose }) => {
                                         borderRadius: "50%",
                                         marginLeft: "0.5vw",
                                     }}
-                                    src={mascotIcon}
+                                    src={
+                                        policy.is_read
+                                            ? mascotIcon
+                                            : mascotIconNew
+                                    }
                                     alt=""
                                 />
                                 <div
@@ -108,6 +113,9 @@ const PolicyListModal = ({ isOpen, onClose }) => {
                                 >
                                     <h3>{policy.name}</h3>
                                 </div>
+                                {/* {!policy.is_read && (
+                                    <div className={styles.unreadRedDot} />
+                                )} */}
                             </div>
                         ))}
                 </div>

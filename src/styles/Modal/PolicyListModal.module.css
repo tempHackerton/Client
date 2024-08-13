@@ -76,8 +76,16 @@
     padding: 0 1vw;
     background-color: #f9f19f;
     margin: 3.102vh 1.597vw;
+    margin-right: 0.5vw;
     height: 7.245vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 2vh;
     cursor: pointer;
+}
+
+.unreadRedDot {
+    width: 0.619vw;
+    height: 1.02vh;
+    background: red;
+    border-radius: 100%;
 }
