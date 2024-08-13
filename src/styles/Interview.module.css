@@ -12,12 +12,16 @@
     /* background-color: aqua; */
     justify-content: center;
     align-items: center;
+
+    overflow: auto;
+    padding-top: 12vh;
 }
 
 .mainWrapper {
     gap: 88px;
     display: flex;
-    margin-top: 175px;
+    /* margin-top: 175px; */
+    margin-top: 6.327vh;
     width: 1750px;
     height: 698px;
 }
@@ -125,4 +129,11 @@
     display: flex;
     width: 744px;
     justify-content: space-between;
+}
+
+.questionBox {
+    display: flex;
+    width: 1118px;
+    height: 745px;
+    background: #67ce96;
 }
