@@ -204,6 +204,7 @@
 .text3{
     box-sizing: border-box;
 
+    padding: 20px;
     position: absolute;
     width: 756px;
     height: 319px;
@@ -279,6 +280,8 @@
 }
 
 .res{
+    font-size: 30px;
+    overflow-y: scroll;
     box-sizing: border-box;
 
     position: absolute;
