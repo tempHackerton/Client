@@ -129,7 +129,7 @@ function Headers() {
 			</div>
 			{isuser &&(
 				<div onClick={LogoutHandler} ref={LogoutRef}>
-				<p>OO님 환영합니다.</p>
+				<p>Jenifer님 환영합니다.</p>
 				<Menu isDropped={LogoutIsOpen}>
 					<Ul>
 						<Li>
