@@ -13,7 +13,7 @@ function Headers() {
     const [aiIsOpen, aiRef, aiHandler] = UseDetectClose(false);
     const [serviceIsOpen, serviceRef, serviceHandler] = UseDetectClose(false);
     // const [alarmIsOpen, alarmRef, alarmHandler] = UseDetectClose(false);
-    const [isAlarmClicked, setIsAlarmClicked] = useState(false);
+    const [isAlarmClicked, setIsAlarmClicked] = useState(true);
 
     const [open, setOpen] = useState(false);
 
@@ -119,7 +119,7 @@ function Headers() {
                     style={{ marginRight: "1vw" }}
                     onClick={() => {
                         setOpen(true);
-                        setIsAlarmClicked(true);
+                        setIsAlarmClicked(!isAlarmClicked);
                     }}
                 >
                     {isAlarmClicked ? <FaBell /> : <BiSolidBellRing />}
