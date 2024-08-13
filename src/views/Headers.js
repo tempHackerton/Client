@@ -60,18 +60,8 @@ function Headers() {
 	function handleLoginClick() {
 		window.location.href = "/Login";
 	}
-	function handleIntroduceClick() {
-		window.location.href = "/IntroModify";
-	}
 	function handleSearchClick() {
 		window.location.href = "/Search";
-	}
-	function handleInterviewClick() {
-		window.location.href = "/Interview";
-	}
-	function handleCraft3Click() {
-	}
-	function handleCraft4Click() {
 	}
 
   return (
@@ -110,26 +100,12 @@ function Headers() {
 					</Ul>
 				</Menu>
 			</div>
-			<div onClick={aiHandler} ref={aiRef}>
-				<p>AI support</p>
-				<Menu isDropped={aiIsOpen}>
-					<Ul>
-						<Li>
-							<LinkWrapper onClick={handleIntroduceClick}>
-								자기소개서 첨삭
-							</LinkWrapper>
-						</Li>
-						<Li>
-							<LinkWrapper onClick={handleInterviewClick}>
-								AI 면접관
-							</LinkWrapper>
-						</Li>
-					</Ul>
-				</Menu>
+			<div>
+				<p>alarm</p>
 			</div>
 			{isuser &&(
 				<div onClick={LogoutHandler} ref={LogoutRef}>
-				<p>Jenifer님 환영합니다.</p>
+				<p>장준용님 환영합니다.</p>
 				<Menu isDropped={LogoutIsOpen}>
 					<Ul>
 						<Li>
