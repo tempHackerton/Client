@@ -19,8 +19,8 @@ function App() {
                 <Route exact path="/" element={<Main />} />
                 <Route exact path="/Login" element={<Login/>}/>
                 <Route exact path="/Signup" element={<Signup/>}/>
-                <Route exact path="/search" element={<Search />} />
-                <Route exact path="/interview" element={<Interview />} />
+                <Route exact path="/Search" element={<Search />} />
+                <Route exact path="/Interview" element={<Interview />} />
                 <Route exact path="/IntroModify" element={<SelfIntro />} />
             </Routes>
         </div>

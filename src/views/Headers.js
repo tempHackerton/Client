@@ -8,12 +8,13 @@ import { useCookies } from "react-cookie";
 import mascot from "../mascot.png";
 function Headers() {
 	const [LogoutIsOpen, LogoutRef, LogoutHandler] = UseDetectClose(false);
-    const [boardIsOpen, boardRef, boardHandler] = UseDetectClose(false);
+    const [aiIsOpen, aiRef, aiHandler] = UseDetectClose(false);
+	const [serviceIsOpen, serviceRef, serviceHandler] = UseDetectClose(false);
 	// const [cookies, setCookie, removeCookie] = useCookies([
 	// 	"token",
 	// 	"socialToken",
 	// ]);
-	const [isuser, setIsuser] = useState(false);
+	const [isuser, setIsuser] = useState(true);
     //dd
 	function handleHomeClick() {
 		window.location.href = "/";
@@ -56,16 +57,17 @@ function Headers() {
 		// // 쿠키에서 토큰을 제거하고 사용자 상태를 업데이트합니다.
 	}
 
-	function handleGuideClick() {
-	}
-
 	function handleLoginClick() {
+		window.location.href = "/Login";
 	}
-	function handleMypageClick() {
+	function handleIntroduceClick() {
+		window.location.href = "/IntroModify";
 	}
-	function handleCraft1Click() {
+	function handleSearchClick() {
+		window.location.href = "/Search";
 	}
-	function handleCraft2Click() {
+	function handleInterviewClick() {
+		window.location.href = "/Interview";
 	}
 	function handleCraft3Click() {
 	}
@@ -94,37 +96,54 @@ function Headers() {
 		</div>
         <div className={styles.navelement} style={{ color: "#f1f1f1" }}>
 			<div onClick={handleHomeClick}>
-				<p>홈</p>
+				<p>Home</p>
 			</div>
-			<div onClick={boardHandler} ref={boardRef}>
-				<p>서비스</p>
-				<Menu isDropped={boardIsOpen}>
+			<div onClick={serviceHandler} ref={serviceRef}>
+				<p>Service</p>
+				<Menu isDropped={serviceIsOpen}>
 					<Ul>
 						<Li>
-							<LinkWrapper onClick={handleCraft1Click}>
+							<LinkWrapper onClick={handleSearchClick}>
 								숨겨진 복지 찾기
 							</LinkWrapper>
 						</Li>
 					</Ul>
 				</Menu>
 			</div>
-			<div onClick={LogoutHandler} ref={LogoutRef}>
-				<p>AI 지원</p>
-				<Menu isDropped={LogoutIsOpen}>
+			<div onClick={aiHandler} ref={aiRef}>
+				<p>AI support</p>
+				<Menu isDropped={aiIsOpen}>
 					<Ul>
 						<Li>
-							<LinkWrapper onClick={handleLogoutClick}>
+							<LinkWrapper onClick={handleIntroduceClick}>
 								자기소개서 첨삭
 							</LinkWrapper>
 						</Li>
 						<Li>
-							<LinkWrapper onClick={handleLogoutClick}>
+							<LinkWrapper onClick={handleInterviewClick}>
 								AI 면접관
 							</LinkWrapper>
 						</Li>
 					</Ul>
 				</Menu>
 			</div>
+			{isuser &&(
+				<div onClick={LogoutHandler} ref={LogoutRef}>
+				<p>Jenifer님 환영합니다.</p>
+				<Menu isDropped={LogoutIsOpen}>
+					<Ul>
+						<Li>
+							<LinkWrapper onClick={handleLogoutClick}>
+								로그아웃
+							</LinkWrapper>
+						</Li>
+					</Ul>
+				</Menu>
+			</div>
+			)}
+			{!isuser &&(
+				<div><p onClick={handleLoginClick}>Login/Signup</p></div>
+			)}
 		</div>
     </div>
   )
