@@ -6,13 +6,16 @@ import start from '../intromascot.png';
 
 function SelfIntroduce() {
   const [isClick, setisClick] = useState(false);
-  const [isLoding, setisLoding] = useState("start");
+  const [isLoding, setisLoding] = useState("end");
   
   function handleClick(){
     setisClick(true);
   }
   function handleCheckClick(){
     setisLoding("loding");
+    setTimeout(() => {
+      setisLoding("end");
+  }, 5000);
   }
   
   return (
@@ -26,7 +29,7 @@ function SelfIntroduce() {
             <div className={styles.ques2}>Q. 글자 제한 수를<br/>입력해주세요</div>
             <input className={styles.text2}></input>
             <div className={styles.ques3}>Q. 자기소개서 내용을 입력해주세요</div>
-            <input className={styles.text3}></input>
+            <textarea className={styles.text3}></textarea>
             <div className={styles.btn2} onClick={handleCheckClick}> 검사하기</div>
           </div>
           <div className={styles.resultCt}></div>
@@ -39,7 +42,7 @@ function SelfIntroduce() {
             <div className={styles.ques2}>Q. 글자 제한 수를<br/>입력해주세요</div>
             <input className={styles.text2}></input>
             <div className={styles.ques3}>Q. 자기소개서 내용을 입력해주세요</div>
-            <input className={styles.text3}></input>
+            <textarea className={styles.text3}></textarea>
             <div className={styles.btn2} onClick={handleCheckClick}> 다시 검사하기</div>
           </div>
           <div className={styles.resultCt}>
@@ -58,7 +61,7 @@ function SelfIntroduce() {
             <div className={styles.ques2}>Q. 글자 제한 수를<br/>입력해주세요</div>
             <input className={styles.text2}></input>
             <div className={styles.ques3}>Q. 자기소개서 내용을 입력해주세요</div>
-            <input className={styles.text3}></input>
+            <textarea className={styles.text3}></textarea>
             <div className={styles.btn2} onClick={handleCheckClick}> 다시 검사하기</div>
           </div>
           <div className={styles.resultCt}>
