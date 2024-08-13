@@ -1,0 +1,127 @@
+/* @font-face {
+	font-family: "NanumSquareRoundOTF";
+	src: url(/public/fonts/NanumSquareRoundR.ttf) format("truetype");
+} */
+
+.Bigpage {
+    width: 100vw;
+    height: 100vh;
+	display: flex;
+    position: relative;
+    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.page {
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+    box-sizing: border-box;
+
+    width: 40vw;
+    height: 50vh;
+	/* margin-top: 14.462vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	cursor: pointer;
+	width: 18vw;
+	height: auto;
+}
+
+.titleWrap {
+	margin-top: 3.897vh;
+	color: #626262;
+	font-family: "NanumSquareRoundOTF";
+	font-size: 2.564vh;
+	justify-content: center;
+	font-weight: 800;
+	margin-bottom: 4.103vh;
+}
+
+::placeholder {
+	color: #bbbbbb;
+}
+
+.inputWrap {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1.744vh;
+}
+
+.inputTitle {
+	gap: 0.821vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "NanumSquareRoundOTF";
+	font-size: 1.538vh;
+	font-weight: bold;
+}
+
+.textEP2 {
+	padding-left: 0.521vw;
+	font-family: "NanumSquareRoundOTF";
+	font-weight: bold;
+	font-size: 1.538vh;
+	border: 1px solid #b2b2b2;
+	width: 19.271vw;
+	height: 4.205vh;
+	/* margin-right: 3.646vw; */
+	border-radius: 20px;
+}
+
+.btnLogin {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border: none;
+	border: none;
+	width: 19.792vw;
+	height: 5.128vh;
+	border-radius: 20px;
+	background-color: #67CE96;
+	margin-bottom: 5vh;
+	font-family: "NanumSquareRoundOTF";
+	font-size: 1.538vh;
+	font-weight: bold;
+	cursor: pointer;
+    color: #FFFFFF;
+}
+
+.bottomText2 {
+	margin-top: 0.308vh;
+	gap: 0.521vw;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+
+	font-family: "NanumSquareRoundOTF";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 1.231vh;
+	line-height: 160%;
+	/* or 19px */
+
+	color: #bbbbbb;
+	padding-right: 2.083vw;
+}
+
+.bottomfont {
+	font-family: "NanumSquareRoundOTF";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 1.333vh;
+	line-height: 160%;
+	cursor: default;
+	/* or 21px */
+
+	color: #000000;
+	cursor: pointer;
+}

@@ -7,6 +7,7 @@ import Main from "./views/Main";
 import Search from "./views/Search";
 import SelfIntro from "./views/SelfIntroduce";
 import Interview from "./views/Interview";
+import Login from "./views/Login";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <BackGround />
             <Routes>
                 <Route exact path="/" element={<Main />} />
+                <Route exact path="/Login" element={<Login/>}/>
                 <Route exact path="/search" element={<Search />} />
                 <Route exact path="/interview" element={<Interview />} />
                 <Route exact path="/IntroModify" element={<SelfIntro />} />
