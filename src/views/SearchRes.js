@@ -57,7 +57,7 @@ function SearchRes() {
         width:"1600px",
         height:"200px",
         
-      }}>
+      }}>{!loading && <div>
         <div className={styles.title}>용복이가 도착했습니다. 확인해주세요!</div>
           <div style={{
             marginTop:"1vh",
@@ -68,7 +68,14 @@ function SearchRes() {
                value={filterText}
               onChange={(e) => setFilterText(e.target.value)}></input>
           </div>
-        </div>
+        </div></div>}
+        {loading && <div>
+        <div className={styles.title}>용복이가 열심히 찾는 중이에요.</div>
+          <div style={{
+            marginTop:"1vh",
+            width:window.screen.width
+          }}>
+        </div></div>}
         <div className={styles.contentwrap}>
         {loading ? (
           <div style={{
