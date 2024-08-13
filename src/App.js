@@ -9,6 +9,7 @@ import SelfIntro from "./views/SelfIntroduce";
 import Interview from "./views/Interview";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
+import Userform from "./views/Userform";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/Login" element={<Login/>}/>
                 <Route exact path="/Signup" element={<Signup/>}/>
                 <Route exact path="/Search" element={<Search />} />
+                <Route exact path="/Userform" element={<Userform/>}/>
                 <Route exact path="/Interview" element={<Interview />} />
                 <Route exact path="/IntroModify" element={<SelfIntro />} />
             </Routes>

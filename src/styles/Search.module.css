@@ -119,6 +119,8 @@
     text-transform: capitalize;
 
     color: #000000;
+
+    cursor: pointer;
 }
 
 .btnWrapper {

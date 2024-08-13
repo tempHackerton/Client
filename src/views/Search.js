@@ -3,11 +3,14 @@ import styles from "../styles/Search.module.css";
 import mascot2 from "../img/mascot2.png";
 import mascot3 from "../img/mascot3.png";
 
+import form from "../views/Userform";
+import Userform from "../views/Userform";
+
 // TODO: 연결 로직 state === loading으로 바꾸기
 
 const Search = () => {
     const [isStarted, setIsStarted] = useState(false); // 검사 시작했는지
-    const [LoginChoice, SetLoginChoice] = useState(null); // 로그인 하시겠어요?
+    const [LoginChoice, SetLoginChoice] = useState("Login"); // 로그인 하시겠어요?
     const [isInputNeeded, setIsInputNeeded] = useState(false);
     const [isInputDone, setIsInputDone] = useState(false); // TODO: submit Button
 
@@ -15,6 +18,7 @@ const Search = () => {
 
     function handleStartBtnClick() {
         setIsStarted(true);
+        window.location.href = "/Userform";
     }
 
     function handleLoginBtnClick() {
@@ -55,7 +59,7 @@ const Search = () => {
                 </div>
             ) : (
                 <div>
-                    {LoginChoice === null ? (
+                    {LoginChoice === null && (
                         <div className={styles.background}>
                             <div className={styles.mainWrapper}>
                                 <img
@@ -87,13 +91,6 @@ const Search = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ) : LoginChoice === "Login" ? ( // 로그인 페이지
-                        <div className={styles.background}></div>
-                    ) : (
-                        // 회원정보 입력창
-                        <div>
-                            <p>Hi</p>
                         </div>
                     )}
                 </div>
