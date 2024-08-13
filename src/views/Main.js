@@ -32,13 +32,13 @@ function Main() {
             <div className={styles.sliderWrapper}>
                 <div className={styles.pageCircleWrapper}>
                     <div className={styles.pageCircle} />
-                    <div className={styles.pageCircle} />
-                    <div className={styles.pageCircle} />
+                    <div className={styles.pageCircle} style={{backgroundColor:"gray"}} />
+                    <div className={styles.pageCircle} style={{backgroundColor:"gray"}} />
                 </div>
-                {/* <nav className={styles.nav}>
-                <img className={styles.btn} onClick={activate1} src={prevbutton} alt='prev'></img>
-                <img className={styles.btn} onClick={activate2} src={nextbutton} alt='next'></img>
-            </nav> */}
+                <nav className={styles.nav}>
+                <img className={styles.btn}src={prevbutton} alt='prev'></img>
+                <img className={styles.btn}src={nextbutton} alt='next'></img>
+            </nav>
             </div>
         </div>
     );

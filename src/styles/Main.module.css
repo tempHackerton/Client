@@ -95,18 +95,19 @@
     top: calc(266px - 12vh);
 }
 
-.sliderWrapper {
+/* .sliderWrapper {
     position: absolute;
     width: 168px;
     height: 114px;
     left: 868px;
     top: calc(805px - 12vh);
-}
+} */
 
 .pageCircleWrapper {
+    margin-top: 80vh;
     display: flex;
-    width: 110px;
-    height: 21px;
+    /* width: 110px;
+    height: 21px; */
     justify-content: space-between;
 }
 
@@ -119,4 +120,8 @@
     border-radius: 10.5px;
 
     background: #67ce96;
+}
+.btn{
+    gap: 20px;
+    margin-top: 60px;
 }
