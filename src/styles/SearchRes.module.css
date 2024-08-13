@@ -1,4 +1,5 @@
 .back{
+    font-family: "NanumSquare";
     position: relative;
     margin-top: 12vh;
     justify-content: center;
@@ -8,6 +9,7 @@
 }
 
 .title{
+    font-family: "NanumSquare";
     justify-content: center;
     display: flex;
     font-family: 'Anek Tamil';
@@ -22,7 +24,7 @@
     color: #000000;
 }
 .filter{
-    font-family: 'Anek Tamil';
+    font-family: "NanumSquare";
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -38,6 +40,9 @@
 }
 
 .box{
+    font-family: "NanumSquare";
+    font-size: 20px;
+    text-align: center;
     width: 198px;
     height: 43px;
 
@@ -47,6 +52,7 @@
 }
 
 .contentwrap{
+    font-family: "NanumSquare";
     /* flex-direction: column; */
     padding-top: 50px;
     margin-top: 50px;
@@ -59,6 +65,7 @@
 }
 
 .content{
+    font-family: "NanumSquare";
     padding-top: 10px;
     margin-left: 100px;
     margin-top: 50px;
@@ -71,7 +78,7 @@
 .content div{
     margin-left: 50px;
     margin-bottom: 10px;
-    font-family: 'Anek Tamil';
+    font-family: "NanumSquare";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -86,7 +93,7 @@
 }
 .content span{
     margin-left: 80px;
-    font-family: 'Anek Tamil';
+    font-family: "NanumSquare";
     font-style: normal;
     font-weight: 700;
     font-size: 35px;

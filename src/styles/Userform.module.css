@@ -1,4 +1,5 @@
 .back{
+    font-family: "NanumSquare";
     margin-top: 15vh;
     position: relative;
     justify-content: center;
@@ -15,7 +16,8 @@
 
 .title{
     margin-bottom: 40px;
-    margin-top: 55px;   
+    margin-top: 55px;
+    font-family: "NanumSquare";
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
@@ -31,7 +33,7 @@
 }
 
 .txt{
-    font-family: 'Anek Tamil';
+    font-family: "NanumSquare";
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -47,6 +49,7 @@
 }
 
 .box1{
+    font-family: "NanumSquare";
     text-align: center;
     margin-left: 5px;
     box-sizing: border-box;
@@ -66,6 +69,7 @@
     color: black
 }
 .box2{
+    font-family: "NanumSquare";
     text-align: center;
     margin-left: 5px;
     box-sizing: border-box;
@@ -78,6 +82,7 @@
     border-radius: 20px;
 }
 .box3{
+    font-family: "NanumSquare";
     text-align: center;
     margin-left: 5px;
     width: 150px;
@@ -89,6 +94,7 @@
     border-radius: 10px;
 }
 .box4{
+    font-family: "NanumSquare";
     text-align: center;
     margin-left: 5px;
     width: 100px;
@@ -100,6 +106,7 @@
     border-radius: 10px;
 }
 .box5{
+    font-family: "NanumSquare";
     text-align: center;
     margin-left: 5px;
     width: 100px;
@@ -111,6 +118,7 @@
     border-radius: 10px;
 }
 .btn{
+    font-family: "NanumSquare";
     cursor: pointer;
     width: 200px;
     height: 50px;
@@ -130,23 +138,3 @@
 
     color: #000000;
 }
-
-.loding{
-    
-    margin-top: 100px;
-    width: 580px;
-    height: 580px;
-    animation: lodingani 2000ms infinite ease-in-out;
-}
-
-@keyframes lodingani{
-    0% {
-      transform: translateY(0px)
-    }
-    50%{
-        transform: translateY(-100px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
