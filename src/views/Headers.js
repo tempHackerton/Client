@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import styles from "../styles/Headers.module.css";
 import UseDetectClose from "../hooks/useDetectClose";
-import { useCookies } from "react-cookie";
+import { FaBell } from "react-icons/fa6";
 import PolicyListModal from "../Components/PolicyLIstModal";
 
 import mascot from "../mascot.png";
@@ -94,10 +94,10 @@ function Headers() {
                 />
             </div>
             <div className={styles.navelement} style={{ color: "#f1f1f1" }}>
-                <div onClick={handleHomeClick}>
+                <div style={{marginRight:"6vw"}} onClick={handleHomeClick}>
                     <p>Home</p>
                 </div>
-                <div onClick={serviceHandler}>
+                <div style={{marginRight:"6vw"}} onClick={serviceHandler} ref={serviceRef}>
                     <p>Service</p>
                     <Menu isDropped={serviceIsOpen}>
                         <Ul>
@@ -109,8 +109,8 @@ function Headers() {
                         </Ul>
                     </Menu>
                 </div>
-                <div onClick={() => setOpen(true)}>
-                    <p>alarm</p>
+                <div style={{marginRight:"1vw"}} onClick={() => setOpen(true)}>
+                    <FaBell />
                 </div>
                 {isuser && (
                     <div onClick={LogoutHandler} ref={LogoutRef}>
