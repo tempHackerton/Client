@@ -99,19 +99,6 @@ const Search = () => {
                 </div>
             )}
         </div>
-        // <div className={styles.background}>
-        //     <div className={styles.tempTitleWrapper}>
-        //         <div className={styles.tempTitle1}>나의 숨겨진 복지 찾기</div>
-        //         <div className={styles.tempTitle2}>
-        //             용복이가
-        //             <br />
-        //             용인 시민인 내가 받을 수 있는 복지가 있는지 찾아줍니다!
-        //         </div>
-        //         <button className={styles.tempStartBtn}>시작해보기</button>
-        //     </div>
-
-        //     <img className={styles.imgTest} src={mainIcon} alt=""></img>
-        // </div>
     );
 };
 

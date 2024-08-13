@@ -1,26 +1,26 @@
-.background {
-    position: relative;
+.back {
     display: flex;
-    /* width: 1920px;
-    height: 829px; */
-    width: 100%;
-    /* height: 88%; */
-    height: 100%;
-    left: 0;
-    /* top: 150px; */
-    top: 0;
-    /* background-color: aqua; */
     justify-content: center;
     align-items: center;
+}
 
+.background {
+    position: fixed;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    left: 0;
+    top: 0;
     overflow: auto;
-    padding-top: 12vh;
+    margin-top: 12vh;
 }
 
 .mainWrapper {
     gap: 88px;
     display: flex;
-    /* margin-top: 175px; */
     margin-top: 6.327vh;
     width: 1750px;
     height: 698px;
@@ -131,9 +131,224 @@
     justify-content: space-between;
 }
 
-.questionBox {
+/*  */
+
+.background {
+    position: fixed;
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    margin-top: 12vh;
+}
+
+.formBox {
+    position: relative;
+    /* margin-top: 6.327vh; */
+    padding: 10px;
     width: 1118px;
     height: 745px;
     background: #67ce96;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+    /* width: 871px; */
+    height: 70px;
+
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 140%;
+    /* identical to box height, or 70px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #ffffff;
+}
+
+.input {
+    width: 663px;
+    height: 41px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: flex;
+    /* width: 300px; */
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.option input {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.option span {
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 140%;
+    /* identical to box height, or 70px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.button {
+    padding: 10px 20px;
+    width: 266px;
+    height: 81px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    /* identical to box height, or 42px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.loadingImg {
+    margin-top: 38px;
+    width: 580px;
+    height: 580px;
+}
+
+.loadingText {
+    /* width: 913px; */
+    height: 70px;
+
+    font-family: "Anek Tamil";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 140%;
+    /* identical to box height, or 70px */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*  */
+
+.container {
+    /* margin-top: 6.327vh; */
+    background-color: #66d2a7;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    /* height: 804px; */
+    height: calc(100vh - 12vh - 6.327vh);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    position: fixed; /* Centering the container */
+}
+
+.chatWindow {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bubble {
+    background-color: #f9f19f;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    outline: none;
+}
+
+.sendButton {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: #66d2a7;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.endButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: #66d2a7;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
