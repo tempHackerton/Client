@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/Userform.module.css';
 
-import running from '../runmascot.png';
-
 function Userform() {
 
     const [isStart, setisStart] = useState(false);
@@ -48,9 +46,7 @@ function Userform() {
     e.preventDefault();
     console.log('Form Data Submitted: ', formData);
     setisStart(true);
-    setTimeout(() => {
-        window.location.href = "/SearchRes";
-    }, 5000);
+    window.location.href = "/SearchRes";
     // You can add further processing, like sending the data to an API
   };
 
@@ -66,9 +62,10 @@ function Userform() {
         <form onSubmit={handleSubmit}>
         <div>
             <div className={styles.title}>정보를 입력해주세요</div>
-            <label className={styles.txt}>Name:</label>
+            <label className={styles.txt}>이름:</label>
             <input
             className={styles.box1}
+            placeholder='장준용'
             type="text"
             name="name"
             value={formData.name}
@@ -78,12 +75,12 @@ function Userform() {
         </div>
 
         <div>
-            <label className={styles.txt}>Date of Birth:</label>
+            <label className={styles.txt}>생년월일:</label>
             <input
             className={styles.box2}
             type="text"
             name="year"
-            placeholder="Year"
+            placeholder="2000"
             value={formData.dob.year}
             onChange={handleDobChange}
             required
@@ -92,7 +89,7 @@ function Userform() {
             className={styles.box2}
             type="text"
             name="month"
-            placeholder="Month"
+            placeholder="2"
             value={formData.dob.month}
             onChange={handleDobChange}
             required
@@ -101,7 +98,7 @@ function Userform() {
             className={styles.box2}
             type="text"
             name="day"
-            placeholder="Day"
+            placeholder="21"
             value={formData.dob.day}
             onChange={handleDobChange}
             required
@@ -109,11 +106,12 @@ function Userform() {
         </div>
 
         <div>
-            <label className={styles.txt}>Date of Residence in Yongin:</label>
+            <label className={styles.txt}>용인 거주 시작일:</label>
             <input
             className={styles.box3}
-            type="date"
+            type="text"
             name="residenceDate"
+            placeholder='2022-02-14'
             value={formData.residenceDate}
             onChange={handleChange}
             required
@@ -121,26 +119,27 @@ function Userform() {
         </div>
 
         <div>
-            <label className={styles.txt}>Marital Status:</label>
+            <label className={styles.txt}>기혼 여부:</label>
             <select
             className={styles.box4}
             name="maritalStatus"
             value={formData.maritalStatus}
             onChange={handleChange}
             >
-            <option value="single">Single</option>
-            <option value="married">Married</option>
-            <option value="divorced">Divorced</option>
-            <option value="widowed">Widowed</option>
+            <option value="single">미혼</option>
+            <option value="married">기혼</option>
+            <option value="divorced">이혼</option>
+            <option value="widowed">사별</option>
             </select>
         </div>
 
         <div>
-            <label className={styles.txt}>Number of Children:</label>
+            <label className={styles.txt}>자녀 수:</label>
             <input
             className={styles.box5}
             type="number"
             name="numOfChildren"
+            placeholder='0'
             value={formData.numOfChildren}
             onChange={handleChange}
             min="0"
@@ -148,57 +147,50 @@ function Userform() {
         </div>
 
         <div>
-            <label className={styles.txt}>Gender:</label>
+            <label className={styles.txt}>성별:</label>
             <select
             className={styles.box4}
             name="gender"
             value={formData.gender}
             onChange={handleChange}
             >
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
+            <option value="male">남</option>
+            <option value="female">여</option>
+            <option value="other">기타</option>
             </select>
         </div>
 
         <div>
-            <label className={styles.txt}>Calendar Type:</label>
+            <label className={styles.txt}>음력/양력:</label>
             <select
             className={styles.box4}
             name="calendarType"
             value={formData.calendarType}
             onChange={handleChange}
             >
-            <option value="solar">Solar</option>
-            <option value="lunar">Lunar</option>
+            <option value="Solar">양력</option>
+            <option value="Lunar">음력</option>
             </select>
         </div>
 
         <div>
-            <label className={styles.txt}>Disability Status:</label>
+            <label className={styles.txt}>장애 여부:</label>
             <select
             className={styles.box4}
             name="disabilityStatus"
             value={formData.disabilityStatus}
             onChange={handleChange}
             >
-            <option value="none">None</option>
-            <option value="mild">Mild</option>
-            <option value="moderate">Moderate</option>
-            <option value="severe">Severe</option>
+            <option value="none">없음</option>
+            <option value="mild">1급</option>
+            <option value="moderate">2급</option>
+            <option value="severe">3급</option>
             </select>
         </div>
 
         <button className={styles.btn} onClick={handleSubmit} type="submit">제출하기</button>
         </form>
         }
-        {isStart &&(
-            <img
-            className={styles.loding}
-            src={running}
-            alt='loding'
-            />
-        )}
     </div>
     </div>
   );
