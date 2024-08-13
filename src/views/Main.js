@@ -5,7 +5,6 @@ import prevbutton from "../img/prevbutton.png";
 import nextbutton from "../img/nextbutton.png";
 
 function Main() {
-    const [isStarted, setIsStarted] = useState(false); // 검사 시작했는지
 
     function handleStartBtnClick() {
         window.location.href = "/search";
