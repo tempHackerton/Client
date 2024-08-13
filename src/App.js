@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
     <Header/>
-    <BackGround/>
+    {/* <BackGround/> */}
     <Routes>
       <Route exact path='/' element={<Main/>}/>
       <Route exact path='/IntroModify' element={<SelfIntro/>}/>
