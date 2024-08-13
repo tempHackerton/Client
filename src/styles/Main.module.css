@@ -18,7 +18,7 @@
     position: absolute;
     /* width: 326px; */
     height: 49px;
-    left: 174px;
+    left: 250px;
     top: 346px;
 }
 
@@ -94,7 +94,7 @@
     width: 552px;
     height: 628px;
     left: 1200px;
-    top: calc(266px - 12vh);
+    top: calc(266px - 7vh);
 }
 
 /* .sliderWrapper {

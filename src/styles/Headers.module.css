@@ -31,7 +31,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 10vw;
 }
 
 .navelement > div {

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/Main.module.css";
 import mascot1 from "../img/mascot1.png";
-import prevbutton from "../img/prevbutton.png";
-import nextbutton from "../img/nextbutton.png";
 
 function Main() {
 
@@ -26,19 +24,7 @@ function Main() {
                     시작해보기
                 </button>
             </div>
-            <img className={styles.mascot} src={mascot1} alt=""></img>
-
-            <div className={styles.sliderWrapper}>
-                <div className={styles.pageCircleWrapper}>
-                    <div className={styles.pageCircle} />
-                    <div className={styles.pageCircle} style={{backgroundColor:"gray"}} />
-                    <div className={styles.pageCircle} style={{backgroundColor:"gray"}} />
-                </div>
-                <nav className={styles.nav}>
-                <img className={styles.btn}src={prevbutton} alt='prev'></img>
-                <img className={styles.btn}src={nextbutton} alt='next'></img>
-            </nav>
-            </div>
+            <img className={styles.mascot} src={mascot1} alt=""/>
         </div>
     );
 }
